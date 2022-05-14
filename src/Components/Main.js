@@ -46,7 +46,7 @@ const MainContainer = styled.div`
   border-radius: 15px;
 
   &:hover{
-    transition: 0.5s;
+    transition: 0.2s;
     background-color: rgba(255, 214, 153, 0.5);
     box-shadow: 0 0 10px 10px rgba(255, 214, 153, 0.5);
   }
@@ -66,7 +66,7 @@ const MainContainer = styled.div`
 
   &:hover{
       
-    transition: 0.5s;
+    transition: 0.2s;
     background-color: rgba(255, 255, 0, 0.4);
     box-shadow: 0 0 10px 10px rgba(255, 255, 0, 0.4);
   }
@@ -82,7 +82,7 @@ const MainContainer = styled.div`
 
   &:hover{
       
-    transition: 0.5s;
+    transition: 0.2s;
     background-color: rgba(255, 51, 160, 0.4);
     box-shadow: 0 0 10px 10px rgba(255, 51, 160, 0.4);
   }
@@ -109,7 +109,7 @@ const MainContainer = styled.div`
 
   &:hover{
       
-    transition: 0.5s;
+    transition: 0.2s;
     background-color: rgba(102, 217, 255, 0.5);
     box-shadow: 0 0 10px 10px rgba(102, 217, 255, 0.5);
   }
@@ -144,7 +144,6 @@ const MainContainer = styled.div`
 
 
     &:hover{
-      transition: 0.5s;
       background-color: rgba(242, 242, 242, 0.5);
       box-shadow: 0 0 10px 10px rgba(242, 242, 242, 0.5);
     }

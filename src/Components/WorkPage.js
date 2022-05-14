@@ -1,26 +1,48 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled,{ ThemeProvider } from 'styled-components';
+import { darkTheme } from './Themes';
 import LogoComponent from '../subComponents/LogoComponent';
 import SocialMedia from '../subComponents/SocialMedia';
 import PowerButton from '../subComponents/PowerButton';
 
-const MainContainer = styled.div`
+import {Work} from "../data/WorkData";
+import Card from '../subComponents/Card';
 
+const Box = styled.div`
+background-color: ${props => props.theme.body};
+width: 100vw;
+height: 100vh;
+position: relative;
+overflow: hidden;
 `
-const Container = styled.div`
 
+const Main = styled.ul`
+position: fixed;
+top: 12rem;
+left: 18rem;
+display: flex;
+flex-direction: column;
+align-items: center;
+color: white;
 `
 
 const WorkPage = () => {
   return (
-    <MainContainer>
-      <Container>
-        <LogoComponent />
-        <PowerButton />
-        <SocialMedia />
+    <ThemeProvider theme = {darkTheme}>
+      <Box>
+        <LogoComponent theme = 'dark' />
+        <SocialMedia theme = 'dark'/>
+        <PowerButton  />
 
-      </Container>
-    </MainContainer>
+        <Main>
+          {Work.map(d => 
+            <Card key={d.id} data = {d} />
+          )}
+        </Main>
+
+      </Box>
+    </ThemeProvider>
+    
   )
 }
 

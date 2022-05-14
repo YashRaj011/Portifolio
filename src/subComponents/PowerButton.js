@@ -22,7 +22,7 @@ const Home = styled.button`
     z-index: 2;
 
     &:hover{
-      transition: 0.5s;
+      transition: 0.2s;
       background-color: rgba(0, 255, 0, 0.4);
       box-shadow: 0 0 10px 10px rgba(0, 255, 0, 0.4);
     }
